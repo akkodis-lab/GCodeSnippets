@@ -24,6 +24,7 @@ M107 ;start with the fan off
 G34 ; Z-Stepper alignment
 G28 X0 Y0 Z0;move X/Y/Z to min endstops
 G29 ; Auto Bed Leveling (BLTouch)
+M500; Save Eeprom Values
 M420 S1 ; Level Grid Line 2
 G1 Z15.0 F{speed_travel} ;move the platform down 15mm
 G92 E0 ;zero the extruded length
